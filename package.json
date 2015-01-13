@@ -1,0 +1,10 @@
+{
+  "name": "n64dev",
+  "version": "2.8.3",
+  "private": false,
+  "dependencies": {
+    "hexo-renderer-ejs": "*",
+    "hexo-renderer-stylus": "*",
+    "hexo-renderer-marked": "*"
+  }
+}
