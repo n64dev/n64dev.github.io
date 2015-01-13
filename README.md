@@ -1,8 +1,7 @@
 n64dev website
 =========================
 This is a [Hexo](http://hexo.io) site, so to work with it you'll need to have
-[node.js](http://nodejs.org/), Hexo (`npm install -g hexo`), and Bower
-(`npm install -g bower`) installed to work with it.
+[node.js](http://nodejs.org/), Hexo (`npm install -g hexo`).
 
 ## Setup
 Run this after cloning the repository:
