@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<title>n64dev</title>
+<title>n64 register reference</title>
 <style type="text/css">
 @font-face {font-family: source-sans-pro-light; src: url("SourceSansPro-Light.ttf.woff"); font-style:normal;}
 @font-face {font-family: source-sans-pro; src: url("SourceSansPro-Regular.ttf.woff"); font-weight: normal; font-style:normal;}
@@ -33,26 +33,76 @@ pre {/*font-family:source-code-pro;*/padding: 0px 40px 0px 40px;background-color
 </head>
 <body>
 <div id="parent">
-<h1 id="n64dev">Welcome to N64dev</h1>
 
-
-<div id="index-table">
-<hr />
-<div id="index-table-elements">
-<h2>Useful N64 Hacking Links</h2>
-<ul>
-    <li><a href="https://github.com/mikeryan/n64dev">Open Source Nintendo 64</a> - massive git repo containing neon64, gsuploader, libn64, and many docs</li>
-    <li><a href="https://github.com/tj90241/cen64">CEN64</a> - a cycle-accurate N64 emulator</li>
-    <li><a href="https://github.com/PeterLemon/N64/">N64 Bare Metal Mips Assembly Programming</a> - krom's excellent tests and sample programs</li>
-    <li><a href="n64crc.html">n64crc</a> - C program to fix cart header checksums</li>
-    <li><a href="https://github.com/jkbenaim/leotools">leotools</a> - extract files from 64DD disk images</li>
-    <li><a href="vru.txt">vru.txt</a> - DragonMinded's description of the VRU</li>
-    <li><a href="registers.html">Registers</a> - N64 CPU register reference</li>
-    <li><a href="irc://irc.shaw.ca/#n64dev">#n64dev</a> - N64 development channel on EFnet</li>
-</ul>
-</div>
-<hr />
-</div>
+<h2>Register Reference</h2>
+<table><thead>
+<tr>
+<th>Number</th>
+<th>Name</th>
+<th>Preserved by</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>0</td>
+<td>$zero</td>
+<td>--------</td>
+</tr>
+<tr>
+<td>1</td>
+<td>$at</td>
+<td>caller</td>
+</tr>
+<tr>
+<td>2, 3</td>
+<td>$v0, $v1</td>
+<td>caller</td>
+</tr>
+<tr>
+<td>4-7</td>
+<td>$a0-$a3</td>
+<td>caller</td>
+</tr>
+<tr>
+<td>8-15</td>
+<td>$t0-$t7</td>
+<td>caller</td>
+</tr>
+<tr>
+<td>16-23</td>
+<td>$s0-$s7</td>
+<td><b>callee</b></td>
+</tr>
+<tr>
+<td>24, 25</td>
+<td>$t8, $t9</td>
+<td>caller</td>
+</tr>
+<tr>
+<td>26, 27</td>
+<td>$k0, $k1</td>
+<td>--------</td>
+</tr>
+<tr>
+<td>28</td>
+<td>$gp</td>
+<td><b>callee</b></td>
+</tr>
+<tr>
+<td>29</td>
+<td>$sp</td>
+<td><b>callee</b></td>
+</tr>
+<tr>
+<td>30</td>
+<td>$fp or $s8</td>
+<td><b>callee</b></td>
+</tr>
+<tr>
+<td>31</td>
+<td>$<!-- jr -->ra</td>
+<td><b>callee</b></td>
+</tr>
+</tbody></table>
 
 
 </div>
