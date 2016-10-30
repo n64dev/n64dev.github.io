@@ -4,33 +4,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <title>Nintendo 64 Development</title>
-<style type="text/css">
-@font-face {font-family: source-sans-pro-light; src: url("SourceSansPro-Light.ttf.woff"); font-style:normal;}
-@font-face {font-family: source-sans-pro; src: url("SourceSansPro-Regular.ttf.woff"); font-weight: normal; font-style:normal;}
-@font-face {font-family: source-serif-pro-light; src: url("SourceSerifPro-Light.ttf.woff"); font-style:normal;}
-@font-face {font-family: source-serif-pro; src: url("SourceSerifPro-Regular.ttf.woff"); font-weight: normal; font-style:normal;}
-
-body {font-family: source-serif-pro;}
-#parent {margin:auto;}
-@media (min-width: 1000px) {
-#parent {max-width:800px;}
-}
-h1 {background-color:#aaf;font-family: source-sans-pro-light;}
-h2 {font-family: source-sans-pro-light;}
-h3 {font-family: source-sans-pro-light;}
-p {padding: 0px 20px 0px 20px;}
-table {padding: 0px 20px 0px 20px;}
-th {text-align:left;}
-td {/*border:1px solid #ddd;padding:0.5rem;*/}
-.columnbreak {-webkit-column-break-before: always;break-before:column;}
-pre {/*font-family:source-code-pro;*/padding: 0px 40px 0px 40px;background-color:#eee;background-clip:content-box;}
-
-#index-table-elements {
-/*  -moz-column-count:3;
-  -webkit-column-count:3;*/
-}
-
-</style>
+<link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 <div id="parent">
@@ -51,41 +25,42 @@ pre {/*font-family:source-code-pro;*/padding: 0px 40px 0px 40px;background-color
 </ul>
 <h3>Software</h3>
 <ul>
-    <li><a href="https://github.com/tj90241/n64chain">n64chain</a> - Tyler Stachecki's N64 toolchain</li>
-    <li><a href="https://dragonminded.com/n64dev/libdragon/">libdragon</a> - DragonMinded's N64 library</li>
-    <li><a href="https://github.com/mikeryan/n64dev">Open Source Nintendo 64</a> - massive git repo containing neon64, gsuploader, libn64, and many docs</li>
-    <li><a href="n64crc.html">n64crc</a> - C program to fix cart header checksums</li>
-    <li><a href="https://github.com/jkbenaim/leotools">leotools</a> - extract files from 64DD disk images</li>
+    <li><a href="https://github.com/tj90241/n64chain">n64chain</a> &mdash; Tyler Stachecki's N64 toolchain</li>
+    <li><a href="https://dragonminded.com/n64dev/libdragon/">libdragon</a> &mdash; DragonMinded's N64 library</li>
+    <li><a href="https://github.com/mikeryan/n64dev">Open Source Nintendo 64</a> &mdash; massive git repo containing neon64, gsuploader, libn64, and many docs</li>
+    <li><a href="n64crc.html">n64crc</a> &mdash; C program to fix cart header checksums</li>
+    <li><a href="https://github.com/jkbenaim/leotools">leotools</a> &mdash; extract files from 64DD disk images</li>
     <li><a href="https://lacklustre.net/n64/agbd/">agbd Game Boy dumper</a> &mdash; dump Game Boy ROMs and saves using transfer pak</li>
+    <li><a href="https://github.com/Kingcom/armips">armips</a> &mdash; hacking-friendly MIPS/ARM assembler with N64 CPU and RSP support</a></li>
 </ul>
 <h3>Reference</h3>
 <ul>
-    <li><a href="https://github.com/PeterLemon/N64/">N64 Bare Metal Mips Assembly Programming</a> - krom's excellent tests and sample programs</li>
-    <li><a href="vru.txt">vru.txt</a> - DragonMinded's description of the VRU</li>
-    <li><a href="registers.html">Registers</a> - N64 CPU register reference</li>
-    <li><a href="http://forums.cen64.com/viewtopic.php?f=16&amp;t=7">krom's patent list</a> - big list of N64-related patents, also mirrored locally <a href="patents.html">here</a></li>
-    <li><a href="irc://irc.shaw.ca/#n64dev">#n64dev</a> - N64 development IRC channel on EFnet</li>
+    <li><a href="https://github.com/PeterLemon/N64/">N64 Bare Metal Mips Assembly Programming</a> &mdash; krom's excellent tests and sample programs</li>
+    <li><a href="vru.txt">vru.txt</a> &mdash; DragonMinded's description of the VRU</li>
+    <li><a href="registers.html">Registers</a> &mdash; N64 CPU register reference</li>
+    <li><a href="http://forums.cen64.com/viewtopic.php?f=16&amp;t=7">krom's patent list</a> &mdash; big list of N64-related patents, also mirrored locally <a href="patents.html">here</a></li>
+    <li><a href="irc://irc.shaw.ca/#n64dev">#n64dev</a> &mdash; N64 development IRC channel on EFnet</li>
     <li><a href="p/U10504EJ7V0UMJ1.pdf">Vr4300, Vr4305, Vr4310 User Manual</a></li>
-    <li><a href="http://trashfolder.org/n64">N64 Games And Hardware You Didn't Know About</a> - a ton of pictures and some info</li>
+    <li><a href="http://trashfolder.org/n64">N64 Games And Hardware You Didn't Know About</a> &mdash; a ton of pictures and some info</li>
 </ul>
 <h3>Presentations</h3>
 <ul>
     <li><a href="https://www.youtube.com/watch?v=HwEdqAb2l50">Reversing the N64 CIC &mdash; REcon 2015</a> by Mike Ryan, marshallh, and John McMaster
     <ul>
-        <li><a href="https://github.com/mikeryan/UltraCIC">UltraCIC</a> open source N64 CIC clone</li>
-        <li><a href="https://github.com/mikeryan/sm5emu">sm5emu</a> SM5 CPU emulator</li>
+        <li><a href="https://github.com/mikeryan/UltraCIC">UltraCIC</a> &mdash; open source N64 CIC clone</li>
+        <li><a href="https://github.com/mikeryan/sm5emu">sm5emu</a> &mdash; SM5 CPU emulator</li>
     </ul></li>
 </ul>
 <h3>Shameless Plugs</h3>
 <ul>
-  <li><a href=" http://64drive.retroactive.be/">64drive</a> - Development Cartridge for N64</li>
-  <li><a href=" http://ultrahdmi.retroactive.be/">UltraHDMI</a> - HDMI Output Mod for N64</li>
+  <li><a href="http://64drive.retroactive.be/">64drive</a> &mdash; Development Cartridge for N64</li>
+  <li><a href="http://ultrahdmi.retroactive.be/">UltraHDMI</a> &mdash; HDMI Output Mod for N64</li>
 </ul>
 <h3>People</h3>
 <ul>
     <li>angrylion &mdash; pixel-accurate RDP LLE</li>
     <li>Happy_ &mdash; 64DD support in MAME</li>
-    <li><a href="https://github.com/PeterLemon">krom</a> &mdash; N64 RSP tests, generally friendly person</li>
+    <li><a href="https://github.com/PeterLemon">krom</a> &mdash; N64 CPU/RSP tests, generally friendly person</li>
     <li><a href="http://luigiblood.tumblr.com/">LuigiBlood aka Seru-Kun</a> &mdash; PJ64 64DD support</li>
     <li><a href="http://retroactive.be/">marshallh</a> &mdash; 64drive, UltraHDMI, Ultra Save, N64 godfather</li>
     <li><a href="https://github.com/mikeryan">Mike Ryan</a> &mdash; N64 CIC reversing, UltraCIC, cen64 contributor, agbd</li>
