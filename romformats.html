@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>N64 ROM format reference</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="parent">
+<h2>N64 ROM formats</h2>
+
+<h3>File extensions</h3>
+<table>
+<thead>
+<tr>
+<th>Extension</th>
+<th>Usual byte order</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>.n64</td>
+<td>Byte-swapped</td>
+<td>Used by No-Intro</td>
+</tr>
+<tr>
+<td>.n64</td>
+<td>Little-endian</td>
+<td>Very rare</td>
+</tr>
+<tr>
+<td>.v64</td>
+<td>Byte-swapped</td>
+<td>Named after the Doctor V64 backup device</td>
+</tr>
+<tr>
+<td>.z64</td>
+<td>Native</td>
+<td>Named after the Z64 backup device</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Note that the actual byte order of a ROM may not always be the one expected from its file extension.
+</p>
+
+<h3>Byte orders</h3>
+<table>
+<thead>
+<tr>
+<th>Format</th>
+<th>Order</th>
+<th>Header (hex)</th>
+<th>Example string</th>
+</tr>
+<tr>
+<td>Native</td>
+<td>ABCD</td>
+<td><tt>80 37 12 40</tt></td>
+<td><tt>SUPER␣MARIO␣64␣␣</tt></th>
+</tr>
+<tr>
+<td>Byte-swapped</td>
+<td>BADC</td>
+<td><tt>37 80 40 12</tt></td>
+<td><tt>USEP␣RAMIR␣O46␣␣</tt></th>
+</tr>
+<tr>
+<td>Little-endian (rare)</td>
+<td>DCBA</td>
+<td><tt>40 12 37 80</tt></td>
+<td><tt>EPUSAM␣R␣OIR␣␣46</tt></td>
+</tr>
+</table>
+
+</div>
+</body>
+</html>
