@@ -22,7 +22,9 @@
 }
 
 body {
-    font-family: source-serif-pro;
+    font-family: source-serif-pro, serif;
+    background-color: white;
+    color: black;
 }
 
 #parent {
@@ -37,11 +39,11 @@ body {
 
 h1 {
     background-color:#aaf;
-    font-family: source-sans-pro-light;
+    font-family: source-sans-pro-light, sans-serif;
 }
 
 h2, h3 {
-    font-family: source-sans-pro-light;
+    font-family: source-sans-pro-light, sans-serif;
 }
 
 p {
