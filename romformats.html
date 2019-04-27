@@ -5,6 +5,11 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <title>N64 ROM format reference</title>
 <link href="style.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+.block { padding: 10em auto; }
+.block:nth-child(odd) { background-color: #aaaaff; }
+.block:nth-child(even) { background-color: #b2b2b2; }
+</style>
 </head>
 <body>
 <div id="parent">
@@ -23,7 +28,7 @@
 <tr>
 <td>.n64</td>
 <td>Byte-swapped</td>
-<td>Used by No-Intro</td>
+<td>Previously used by No-Intro</td>
 </tr>
 <tr>
 <td>.n64</td>
@@ -60,19 +65,19 @@ Note that the actual byte order of a ROM may not always be the one expected from
 <td>Native</td>
 <td>ABCD</td>
 <td><tt>80 37 12 40</tt></td>
-<td><tt>SUPER␣MARIO␣64␣␣</tt></td>
+<td><tt><span class="block">SUPE</span><span class="block">R␣MA</span><span class="block">RIO␣</span><span class="block">64␣␣</span></tt></td>
 </tr>
 <tr>
 <td>Byte-swapped</td>
 <td>BADC</td>
 <td><tt>37 80 40 12</tt></td>
-<td><tt>USEP␣RAMIR␣O46␣␣</tt></td>
+<td><tt><span class="block">USEP</span><span class="block">␣RAM</span><span class="block">IR␣O</span><span class="block">46␣␣</span></tt></td>
 </tr>
 <tr>
 <td>Little-endian (rare)</td>
 <td>DCBA</td>
 <td><tt>40 12 37 80</tt></td>
-<td><tt>EPUSAM␣R␣OIR␣␣46</tt></td>
+<td><tt><span class="block">EPUS</span><span class="block">AM␣R</span><span class="block">␣OIR</span><span class="block">␣␣46</span></tt></td>
 </tr>
 </table>
 
